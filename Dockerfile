@@ -4,13 +4,13 @@ FROM mysql/mysql-server
 ADD https://raw.githubusercontent.com/Tikia/docker-mysql-server/master/my.cnf /etc/
 
 #Define Volume
-VOLUME /var/lib/mysql
+#VOLUME /var/lib/mysql
 
 #Define Entrypoint
-ENTRYPOINT ["/entrypoint.sh"]
+#ENTRYPOINT ["/entrypoint.sh"]
 
 #Define port
-EXPOSE 3306 33060
+#EXPOSE 3306 33060
 
 #Define CMD
-CMD ["mysqld"]
+#CMD ["mysqld"]
